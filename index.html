@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watch Full Video</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Mengubah background jadi gelap agar video lebih menonjol */
+        body {
+            background-color: #0d0e12;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container utama agar teks dan video sejajar rapi */
+        .wrapper {
+            width: 100%;
+            max-width: 650px; /* Ukuran pas untuk HP & PC */
+            margin-top: 10vh;
+        }
+
+        /* Gaya teks Watch & Streaming yang modern */
+        .header-teks {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        .watch { color: #ffffff; }
+        .streaming { color: #ff3333; }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+            overflow: hidden;
+            background-color: #1a1c23; /* Warna dasar jika video loading */
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            pointer-events: none;
+        }
+
+        /* Overlay sedikit lebih gelap agar tombol play kontras */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        /* Tombol play merah menyala ala platform streaming besar */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 68px;
+            height: 68px;
+            background: #ff3333;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(255, 51, 51, 0.4);
+        }
+
+        /* Segitiga play warna putih bersih */
+        .play-button:after {
+            content: '';
+            position: absolute;
+            left: 27px;
+            top: 20px;
+            border-style: solid;
+            border-width: 14px 0 14px 22px;
+            border-color: transparent transparent transparent #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header-teks">
+        <span class="watch">Watch</span>
+        <span class="streaming">Streaming</span>
+    </div>
+
+    <a href="https://theoreticalassertshame.com/kinpdqmkw?key=308eaf66481cf68b5726bc4b540bb720" target="_blank">
+        <div class="video-container">
+            <video>
+                <source src="rus.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay"></div>
+            <div class="play-button"></div>
+        </div>
+    </a>
+</div>
+
+</body>
+</html>
+
+
